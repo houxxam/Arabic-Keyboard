@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clavier Arabe</title>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/tailwind.js"></script>
+</head>
+<body class="bg-gray-50">
+    <header class="w-full bg-white shadow h-20 flex justify-between items-center px-20">
+        <div class="logo font-bold text-xl">Clavier Arabe</div>
+        <div class="lang">
+        <button class="font-bold mx-1">FR</button>
+        <button class="active:font-bold mx-1">ENG</button>
+        <button class="active:font-bold mx-1">AR</button>
+        </div>
+    </header>
+    <section class="relative">
+        <div class="container mx-auto my-10 py-10">
+            <textarea dir="rtl" class="h-40 w-full border resize-none p-5" name="" id="text-area"></textarea>
+            <div class="action-btns flex justify-around gap-2">
+                <button id="btn-copy" class="bg-gray-100 px-2 py-1 w-full rounded-md border hover:bg-white">Copier</button>
+                <button id="btn-delete" class="bg-gray-100 px-2 py-1 w-full rounded-md border hover:bg-white">Effacer</button>
+                <button id="btn-save" class="bg-gray-100 px-2 py-1 w-full rounded-md border hover:bg-white">Enregistrer</button>
+                <button id="btn-space" class="bg-gray-100 px-2 py-1 w-full rounded-md border hover:bg-white">Espace</button>
+                <button id="btn-small" class="bg-gray-100 px-2 py-1 w-full rounded-md border hover:bg-white">Petit Cadre</button>
+                <button id="btn-big" class="bg-gray-100 px-2 py-1 w-full rounded-md border hover:bg-white">Grand Cadre</button>
+            </div>
+            <div class="keyboard  mt-16 py-5 flex flex-col justify-center items-center gap-2" dir="rtl">
+                <div class="line-1 flex gap-2 flex-wrap justify-center w-full lg:w-1/2">
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >a</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ا</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >b</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ب</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >t</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ت</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >t'</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ث</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >j</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ج</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >H</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ح</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >H'</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">خ</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >d</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">د</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >d'</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ذ</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >r</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ر</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >z</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ز</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >s</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">س</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >s'</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ش</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >S</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ص</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >D</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ض</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >T</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ط</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >Z</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ظ</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >g</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ع</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >g'</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">غ</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >f</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ف</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >q</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ق</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >k</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ك</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >l</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ل</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >m</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">م</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >n</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ن</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >h</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ه</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >w</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">و</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >y</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ي</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >-</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ء</button>
+                    </div>
+                </div>
+                <div class="line-2 flex gap-2 flex-wrap justify-center w-full md:w-1/2">
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >aa</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">آ</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >&#x200B;</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ٱ</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >-a</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">أ</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >A</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">إ</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >h'</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ة</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >o--</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ؤ</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >i--</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ئ</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >Y</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">ى</button>
+                    </div>
+                </div>    
+                <div dir="ltr" class="line-3 flex gap-2 flex-wrap justify-center w-full md:w-1/2 mt-5">
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >0</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">٠</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >1</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">١</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >2</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">٢</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >3</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">٣</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >4</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">٤</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >5</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">٥</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >6</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">٦</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >7</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">٧</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >8</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">٨</button>
+                    </div>
+                    <div class="btn flex flex-col w-1/12 h-16 items-center gap-1">
+                        <span >9</span>
+                        <button class="letter-btn w-full h-full bg-gray-200 text-red-600 rounded-md border border-gray-300 hover:bg-white font-bold">٩</button>
+                    </div>
+                    
+                </div>    
+            </div>
+        </div>
+        <div class="hidden alert-message-box bg-gray-900 text-white absolute -top-5 right-10 text-center flex justufy-between items-center gap-5 ease-in-out rounded-md overflow-hidden"><p class="alert-message py-2 pl-5"></p><span class="block font-bold text-xl cursor-pointer alert-message-close p-2 bg-gray-500">X</span></div>
+        
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
