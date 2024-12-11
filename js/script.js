@@ -213,3 +213,5 @@ function translateLetter(event) {
     // Restore the cursor position
     textArea.setSelectionRange(cursorPosition, cursorPosition);
 }
+
+
